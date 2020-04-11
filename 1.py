@@ -15,7 +15,6 @@ while True:
     if 'answer_content' in j['data']:
         if 'stem' in j['data']:
             print(j['data']['answer_content'])
-    import os
-    
     time.sleep(4)
+    import os
     i = os.system('cls')
