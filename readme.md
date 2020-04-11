@@ -5,7 +5,9 @@
 # 如何使用
 
 ## 微信电脑版一定要设置如下
+
 ![](https://gitee.com/lNeverl/pic/raw/master/20200411093834.png)
+
 这样是为了使用微信自带的浏览器。
 
 # 文件下载点击[此处](https://github.com/lNeverl/cidaren/releases)或者直接把整个仓库下载下来里面fiddler和exe都是一样的。
@@ -21,7 +23,7 @@
 
 ![](https://gitee.com/lNeverl/pic/raw/master/20200411092756.png)
 将所有代码删除，替换如下。
-*下载后的文件夹中`fiddler中的脚本.txt`中的内容与下面的相同。
+下载后的文件夹中`fiddler中的脚本.txt`中的内容与下面的相同。
 ```
 import System;
 import System.Windows.Forms;
