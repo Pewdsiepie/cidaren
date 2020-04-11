@@ -11,8 +11,11 @@ while True:
             answer = str(j['data']['options'][i]['answer'])
             if answer == 'True':
                 print(j['data']['options'][i]['content'])
-        print('--------------------------------------------------')
+        
     if 'answer_content' in j['data']:
         if 'stem' in j['data']:
             print(j['data']['answer_content'])
+    import os
+    
     time.sleep(4)
+    i = os.system('cls')
