@@ -526,6 +526,11 @@ class Handlers
 }
 ```
 
+
+
+# 这里一定要点保存 ![](https://gitee.com/lNeverl/pic/raw/master/20200411185110.png)
+
+
 3.按住fiddler上的`Any Process` *不松开鼠标*，  鼠标会变成一个十字。将十字移动到**微信电脑版**上松手。
 ![](https://gitee.com/lNeverl/pic/raw/master/20200411093524.png)
 
