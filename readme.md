@@ -9,3 +9,19 @@
 
 
 # 很抱歉 碍于某些不能说的原因 现在仓库只留下修改后的py文件 和封装后的exe文件  fiddler中的脚本导出路径为c:\cdr\
+即fiddler的脚本改为下面的样子
+```
+    static function OnBeforeResponse(oSession: Session) {
+        if(oSession.uriContains("https://wap.vocabgo.com/Student/ClassTask/SubmitAnswer")){
+            oSession.utilDecodeResponse();
+            oSession.SaveResponse("c:/cdr/response.txt",true);
+            oSession.SaveResponseBody("c:/cdr/responseBody.txt");
+        }
+        if(oSession.uriContains("https://wap.vocabgo.com/Student/StudyTask/SubmitAnswer")){
+            oSession.utilDecodeResponse();
+            oSession.SaveResponse("c:/cdr/response.txt",true);
+            oSession.SaveResponseBody("c:/cdr/responseBody.txt");
+        }
+        
+        
+```
