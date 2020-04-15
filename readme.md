@@ -13,16 +13,12 @@
 即fiddler的脚本改为下面的样子
 ```
     static function OnBeforeResponse(oSession: Session) {
-        if(oSession.uriContains("https://wap.vocabgo.com/Student/ClassTask/SubmitAnswer")){
+        if(oSession.uriContains("https://wap.vocabgo.com")){
             oSession.utilDecodeResponse();
             oSession.SaveResponse("c:/cdr/response.txt",true);
             oSession.SaveResponseBody("c:/cdr/responseBody.txt");
         }
-        if(oSession.uriContains("https://wap.vocabgo.com/Student/StudyTask/SubmitAnswer")){
-            oSession.utilDecodeResponse();
-            oSession.SaveResponse("c:/cdr/response.txt",true);
-            oSession.SaveResponseBody("c:/cdr/responseBody.txt");
-        }
+     
         
         
 ```
