@@ -14,7 +14,7 @@
 即fiddler的脚本改为下面的样子
 ```
     static function OnBeforeResponse(oSession: Session) {
-        if(oSession.uriContains("https://wap.vocabgo.com")){
+        if(oSession.uriContains("https://wap.vocabgo.com/Student")){
             oSession.utilDecodeResponse();
             oSession.SaveResponse("c:/cdr/response.txt",true);
             oSession.SaveResponseBody("c:/cdr/responseBody.txt");
